@@ -4,7 +4,11 @@
 instalado, validado e a aplicação de exemplo (`react-starter`) foi implantada e
 acessada com sucesso a partir do navegador do host macOS.
 
-## 3.1. Logs de comandos ([`../evidencias/logs/`](../evidencias/logs/))
+## 3.1. Vídeo de demonstração
+
+- [Demonstração da instalação e implantação do OpenChoreo](https://drive.google.com/file/d/1BJbHhxQHgV8b1FgQ0DDkE307m1KwHHv4/view?usp=sharing)
+
+## 3.2. Logs de comandos ([`../evidencias/logs/`](../evidencias/logs/))
 
 | Arquivo | Conteúdo |
 |---|---|
@@ -16,7 +20,7 @@ acessada com sucesso a partir do navegador do host macOS.
 | [`06-acesso-http.txt`](../evidencias/logs/06-acesso-http.txt) | `curl` do host macOS → **HTTP 200** no app e no Backstage |
 | [`07-component-react-starter.txt`](../evidencias/logs/07-component-react-starter.txt) | Component/workload/httproutes + `check-status.sh` (todos `[READY]`) |
 
-## 3.2. Capturas de tela ([`../evidencias/screenshots/`](../evidencias/screenshots/))
+## 3.3. Capturas de tela ([`../evidencias/screenshots/`](../evidencias/screenshots/))
 
 | Arquivo | O que mostra |
 |---|---|
@@ -26,7 +30,7 @@ acessada com sucesso a partir do navegador do host macOS.
 | [`04-backstage-catalog.png`](../evidencias/screenshots/04-backstage-catalog.png) | Catálogo com o **Project** `Default Project` |
 | [`05-backstage-project-component.png`](../evidencias/screenshots/05-backstage-project-component.png) | Project com o **Component `react-starter`**, **Environments** e **Deployment Pipeline** (Dev→Staging→Prod) |
 
-## 3.3. Principais marcos comprovados
+## 3.4. Principais marcos comprovados
 
 - **Cluster k3d** `openchoreo-quick-start` — 1 node `Ready`, K3s v1.32.9.
 - **Helm releases (v1.1.1)**: cert-manager, external-secrets, kgateway, openbao,
@@ -40,7 +44,7 @@ acessada com sucesso a partir do navegador do host macOS.
 - **Portal**: login bem-sucedido como `admin@openchoreo.dev` e navegação até o
   componente implantado.
 
-## 3.4. URLs geradas
+## 3.5. URLs geradas
 
 | Recurso | URL |
 |---|---|

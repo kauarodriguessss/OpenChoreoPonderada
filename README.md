@@ -28,6 +28,10 @@ A plataforma organiza o trabalho em torno de conceitos de alto nível —
 | [`evidencias/`](evidencias/) | Logs, saídas de comandos e capturas coletadas |
 | [`evidencias/video/`](evidencias/video/) | Artefatos auxiliares usados na gravação da demonstração |
 
+## Vídeo de demonstração
+
+- [Demonstração da instalação e implantação do OpenChoreo](https://drive.google.com/file/d/1BJbHhxQHgV8b1FgQ0DDkE307m1KwHHv4/view?usp=sharing)
+
 ## Resumo do ambiente utilizado
 
 - **Máquina:** MacBook Pro (Apple Silicon, M1 Pro), 10 núcleos, 16 GB RAM, arquitetura `arm64`
