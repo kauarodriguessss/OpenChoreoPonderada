@@ -1,0 +1,20 @@
+### ./deploy-react-starter.sh
+### início: Tue Jun 23 11:21:50 -03 2026
+[0;34m[INFO][0m Sample: samples/from-image/react-starter-web-app/react-starter.yaml
+[0;34m[INFO][0m Deploying the React Starter web application...
+[0;32m[SUCCESS][0m Component 'react-starter' created
+[0;32m[SUCCESS][0m Workload 'react-starter' created
+[0;34m[INFO][0m Waiting for ReleaseBinding to be synced...
+[0;32m[SUCCESS][0m ReleaseBinding synced with Release
+[0;34m[INFO][0m Waiting for Deployment to be available...
+[0;32m[SUCCESS][0m Deployment is available
+[0;34m[INFO][0m Waiting for HTTPRoute to be ready...
+[0;32m[SUCCESS][0m HTTPRoute is ready
+
+[0;32m[SUCCESS][0m React Starter web application is ready!
+🌍 Access the application at: http://http-react-starter-development-default-cde5190f.openchoreoapis.localhost:19080
+   Open this URL in your browser to see the React starter application.
+
+[0;34m[INFO][0m To clean up and delete this application, run:
+[0;34m[INFO][0m   ./deploy-react-starter.sh --clean
+### fim: Tue Jun 23 11:22:08 -03 2026 (exit=0)

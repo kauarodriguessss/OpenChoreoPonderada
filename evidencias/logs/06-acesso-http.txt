@@ -1,0 +1,11 @@
+### Teste de acesso HTTP a partir do host macOS (Tue Jun 23 11:22:28 -03 2026)
+
+===== Published ports (k3d serverlb) =====
+k3d-openchoreo-quick-start-serverlb -> 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp, 0.0.0.0:8443->8443/tcp, [::]:8443->8443/tcp, 0.0.0.0:10081-10082->10081-10082/tcp, [::]:10081-10082->10081-10082/tcp, 0.0.0.0:11080->11080/tcp, [::]:11080->11080/tcp, 0.0.0.0:11085->11085/tcp, [::]:11085->11085/tcp, 0.0.0.0:19080->19080/tcp, [::]:19080->19080/tcp, 0.0.0.0:19443->19443/tcp, [::]:19443->19443/tcp, 0.0.0.0:11081->5601/tcp, [::]:11081->5601/tcp, 0.0.0.0:6550->6443/tcp, 0.0.0.0:11082->9200/tcp, [::]:11082->9200/tcp
+
+===== App react-starter (http://http-react-starter-development-default-cde5190f.openchoreoapis.localhost:19080) =====
+HTTP 200 | tempo 0.016207s | tamanho 644B
+--- primeiras linhas do HTML ---
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.03830f07.js"></script><link href="/static/css/main.073c9b0a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+===== Backstage UI (http://openchoreo.localhost:8080/) =====
+HTTP 200 | tempo 0.008422s

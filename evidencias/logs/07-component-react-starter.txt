@@ -1,0 +1,60 @@
+### Component react-starter (Tue Jun 23 11:22:50 -03 2026)
+
+===== kubectl get components -A =====
+NAMESPACE   NAME            PROJECT   COMPONENTTYPE                AGE
+default     react-starter   default   deployment/web-application   61s
+
+===== workloads / deployments no data plane =====
+NAMESPACE   NAME            PROJECT   COMPONENT       AGE
+default     react-starter   default   react-starter   62s
+
+dp-default-default-development-f8e58905   react-starter-development-c37e66d8   1/1     1            1           61s
+
+NAMESPACE                                 NAME                          HOSTNAMES                                                                      AGE
+dp-default-default-development-f8e58905   react-starter-http-8194fd6a   ["http-react-starter-development-default-cde5190f.openchoreoapis.localhost"]   61s
+openchoreo-control-plane                  backstage                     ["openchoreo.localhost"]                                                       3m47s
+openchoreo-control-plane                  openchoreo-api                ["api.openchoreo.localhost"]                                                   3m47s
+thunder                                   thunder-httproute             ["thunder.openchoreo.localhost"]                                               3m53s
+
+===== check-status.sh =====
+OpenChoreo Installation Status: Single-Cluster Mode
+Using current context: k3d-openchoreo-quick-start
+
+======================================================================
+                     OpenChoreo Component Status                     
+======================================================================
+
++- Infrastructure (Core) --------------------------------------------+
+| Cert Manager [READY]                                               |
+| KGateway [READY]                                                   |
+| External Secrets [READY]                                           |
+| OpenBao [READY]                                                    |
+| Thunder [READY]                                                    |
++--------------------------------------------------------------------+
+
++- Control Plane (Core) ---------------------------------------------+
+| Controller Manager [READY]                                         |
+| API Server [READY]                                                 |
+| Backstage [READY]                                                  |
+| Cluster Gateway [READY]                                            |
++--------------------------------------------------------------------+
+
++- Data Plane (Core) ------------------------------------------------+
+| Cluster Agent [READY]                                              |
+| Gateway Proxy [READY]                                              |
++--------------------------------------------------------------------+
+
++- Workflow Plane (Optional) ----------------------------------------+
+| Cluster Agent [NOT INSTALLED]                                      |
+| Argo Workflow Controller [NOT INSTALLED]                           |
+| Docker Registry [NOT INSTALLED]                                    |
++--------------------------------------------------------------------+
+
++- Observability Plane (Optional) -----------------------------------+
+| Controller Manager [NOT INSTALLED]                                 |
+| Cluster Agent [NOT INSTALLED]                                      |
+| OpenSearch [NOT INSTALLED]                                         |
+| Observer [NOT INSTALLED]                                           |
++--------------------------------------------------------------------+
+
+======================================================================
