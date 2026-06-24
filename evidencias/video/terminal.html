@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+  html,body{margin:0;height:100%;background:#0b0f17;}
+  .term{font-family:'SF Mono',Menlo,Consolas,monospace;font-size:15px;line-height:1.5;
+        color:#d7dde7;padding:28px 34px;box-sizing:border-box;height:100%;}
+  .bar{display:flex;gap:8px;margin-bottom:18px;align-items:center}
+  .dot{width:13px;height:13px;border-radius:50%}
+  .r{background:#ff5f57}.y{background:#febc2e}.g{background:#28c840}
+  .ttl{color:#8b94a6;margin-left:10px;font-size:13px}
+  .h{color:#7aa2f7;font-weight:700;margin:18px 0 6px}
+  .p{color:#9ece6a}              /* prompt verde  */
+  .c{color:#e0e6f0;font-weight:600} /* comando      */
+  .ok{color:#28c840;font-weight:700}
+  .warn{color:#febc2e}
+  .info{color:#7dcfff}
+  .muted{color:#5c6675}
+  .url{color:#bb9af7}
+</style></head>
+<body><div class="term">
+  <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="ttl">openchoreo-quick-start — instalação OpenChoreo v1.1.1 (macOS · Docker Desktop)</span></div>
+
+  <div class="h"># 1) Imagem quick-start e container</div>
+  <div><span class="p">$</span> <span class="c">docker pull ghcr.io/openchoreo/quick-start:v1.1.1</span></div>
+  <div class="muted">Status: Downloaded newer image for ghcr.io/openchoreo/quick-start:v1.1.1</div>
+  <div><span class="p">$</span> <span class="c">docker run -d -it --network=host -v /var/run/docker.sock:/var/run/docker.sock ...</span></div>
+
+  <div class="h"># 2) Instalação (como usuário openchoreo)</div>
+  <div><span class="p">$</span> <span class="c">docker exec -u openchoreo openchoreo-quick-start ./install.sh --version v1.1.1</span></div>
+  <div class="info">[INFO] k3d cluster 'openchoreo-quick-start' created successfully</div>
+  <div class="info">[INFO] Helm: cert-manager · external-secrets · kgateway · openbao · thunder</div>
+  <div class="info">[INFO] Helm: openchoreo-control-plane · openchoreo-data-plane  (v1.1.1)</div>
+  <div class="ok">[SUCCESS] OpenChoreo installation completed successfully!</div>
+
+  <div class="h"># 3) Validação</div>
+  <div><span class="p">$</span> <span class="c">docker exec -u openchoreo openchoreo-quick-start ./validate-installation.sh</span></div>
+  <div class="ok">[SUCCESS] All validations passed!</div>
+  <div class="muted">23 pods Running · Control Plane [READY] · Data Plane [READY]</div>
+
+  <div class="h"># 4) Deploy da aplicação de exemplo</div>
+  <div><span class="p">$</span> <span class="c">docker exec -u openchoreo openchoreo-quick-start ./deploy-react-starter.sh</span></div>
+  <div class="ok">[SUCCESS] Component 'react-starter' created · Deployment is available · HTTPRoute is ready</div>
+  <div>🌍 <span class="url">http://http-react-starter-development-default-cde5190f.openchoreoapis.localhost:19080</span></div>
+
+  <div class="h"># 5) Acesso a partir do host macOS</div>
+  <div><span class="p">$</span> <span class="c">curl -s -o /dev/null -w "HTTP %{http_code}\n" http://...:19080</span> &nbsp;→&nbsp; <span class="ok">HTTP 200</span></div>
+  <div><span class="p">$</span> <span class="c">curl -s -o /dev/null -w "HTTP %{http_code}\n" http://openchoreo.localhost:8080/</span> &nbsp;→&nbsp; <span class="ok">HTTP 200</span></div>
+</div></body></html>
