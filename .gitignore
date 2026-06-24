@@ -1,0 +1,13 @@
+# Artefatos temporários
+*.tmp
+*.swp
+.DS_Store
+
+# Kubeconfigs locais (podem conter dados sensíveis)
+kubeconfig
+*.kubeconfig
+
+# Não ignoramos evidencias/ — elas fazem parte da entrega
+
+# Artefatos temporários do Playwright MCP
+.playwright-mcp/
