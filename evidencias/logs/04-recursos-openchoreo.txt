@@ -1,0 +1,39 @@
+### Recursos da plataforma OpenChoreo (Tue Jun 23 11:21:21 -03 2026)
+
+===== k3d cluster list =====
+NAME                     SERVERS   AGENTS   LOADBALANCER
+openchoreo-quick-start   1/1       0/0      true
+
+===== kubectl get nodes =====
+NAME                                  STATUS   ROLES                  AGE     VERSION
+k3d-openchoreo-quick-start-server-0   Ready    control-plane,master   4m36s   v1.32.9+k3s1
+
+===== helm list -A =====
+NAME                    	NAMESPACE               	REVISION	UPDATED                                	STATUS  	CHART                         	APP VERSION
+cert-manager            	cert-manager            	1       	2026-06-23 14:17:01.605804096 +0000 UTC	deployed	cert-manager-v1.19.4          	v1.19.4    
+external-secrets        	external-secrets        	1       	2026-06-23 14:17:36.821883459 +0000 UTC	deployed	external-secrets-2.0.1        	v2.0.1     
+kgateway                	openchoreo-control-plane	1       	2026-06-23 14:18:21.759708425 +0000 UTC	deployed	kgateway-v2.2.1               	v2.2.1     
+kgateway-crds           	openchoreo-control-plane	1       	2026-06-23 14:18:18.809036131 +0000 UTC	deployed	kgateway-crds-v2.2.1          	v2.2.1     
+openbao                 	openbao                 	1       	2026-06-23 14:19:47.515673297 +0000 UTC	deployed	openbao-0.25.6                	v2.5.1     
+openchoreo-control-plane	openchoreo-control-plane	1       	2026-06-23 14:19:03.614776097 +0000 UTC	deployed	openchoreo-control-plane-1.1.1	v1.1.1     
+openchoreo-data-plane   	openchoreo-data-plane   	1       	2026-06-23 14:20:20.946655216 +0000 UTC	deployed	openchoreo-data-plane-1.1.1   	v1.1.1     
+thunder                 	thunder                 	1       	2026-06-23 14:18:23.112594259 +0000 UTC	deployed	thunder-0.28.0                	0.28.0     
+
+===== kubectl get dataplanes -A =====
+No resources found
+
+===== kubectl get environments -A =====
+NAMESPACE   NAME          AGE
+default     development   60s
+default     production    60s
+default     staging       60s
+
+===== kubectl get projects -A =====
+NAMESPACE   NAME      AGE
+default     default   61s
+
+===== kubectl get components -A =====
+No resources found
+
+===== kubectl get deploymenttracks -A =====
+error: the server doesn't have a resource type "deploymenttracks"

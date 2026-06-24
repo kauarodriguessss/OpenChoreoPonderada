@@ -1,0 +1,63 @@
+### docker pull ghcr.io/openchoreo/quick-start:v1.1.1
+### Tue Jun 23 11:08:07 -03 2026
+v1.1.1: Pulling from openchoreo/quick-start
+4f4fb700ef54: Pulling fs layer
+ecb14e95be7c: Pulling fs layer
+3e90b6d57053: Pulling fs layer
+c042801ba88c: Pulling fs layer
+447f7cd821aa: Pulling fs layer
+86ffbaa5d5e9: Pulling fs layer
+545e9d3c5cce: Pulling fs layer
+3984ae84ff31: Pulling fs layer
+363ea1a5f1bf: Pulling fs layer
+993a12cb7674: Pulling fs layer
+4f4fb700ef54: Already exists
+3984ae84ff31: Download complete
+363ea1a5f1bf: Download complete
+86ffbaa5d5e9: Download complete
+545e9d3c5cce: Download complete
+993a12cb7674: Download complete
+447f7cd821aa: Download complete
+3e90b6d57053: Download complete
+c042801ba88c: Download complete
+unexpected EOF
+failed to connect to the docker API at unix:///Users/joaoadair/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/joaoadair/.docker/run/docker.sock: connect: no such file or directory
+failed to connect to the docker API at unix:///Users/joaoadair/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/joaoadair/.docker/run/docker.sock: connect: no such file or directory
+failed to connect to the docker API at unix:///Users/joaoadair/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix /Users/joaoadair/.docker/run/docker.sock: connect: no such file or directory
+
+### NOTA (Tue Jun 23 11:13:37 -03 2026): durante o pull o daemon do Docker Desktop caiu (socket sumiu, processos encerrados). Reiniciado com 'open -a Docker', daemon voltou em ~21s. Retentando pull (layers em cache são reaproveitados).
+
+v1.1.1: Pulling from openchoreo/quick-start
+4f4fb700ef54: Pulling fs layer
+ecb14e95be7c: Pulling fs layer
+3e90b6d57053: Pulling fs layer
+c042801ba88c: Pulling fs layer
+447f7cd821aa: Pulling fs layer
+86ffbaa5d5e9: Pulling fs layer
+545e9d3c5cce: Pulling fs layer
+3984ae84ff31: Pulling fs layer
+363ea1a5f1bf: Pulling fs layer
+993a12cb7674: Pulling fs layer
+3e90b6d57053: Already exists
+c042801ba88c: Already exists
+447f7cd821aa: Already exists
+86ffbaa5d5e9: Already exists
+545e9d3c5cce: Already exists
+993a12cb7674: Already exists
+3984ae84ff31: Already exists
+363ea1a5f1bf: Already exists
+4f4fb700ef54: Already exists
+ecb14e95be7c: Download complete
+ecb14e95be7c: Pull complete
+3e90b6d57053: Pull complete
+c042801ba88c: Pull complete
+447f7cd821aa: Pull complete
+86ffbaa5d5e9: Pull complete
+545e9d3c5cce: Pull complete
+3984ae84ff31: Pull complete
+993a12cb7674: Pull complete
+363ea1a5f1bf: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:33025ece999abadb1db5b5e873834032254e0106d91420429f5812e238e83c96
+Status: Downloaded newer image for ghcr.io/openchoreo/quick-start:v1.1.1
+ghcr.io/openchoreo/quick-start:v1.1.1

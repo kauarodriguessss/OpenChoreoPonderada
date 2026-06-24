@@ -1,0 +1,54 @@
+### validate-installation.sh + estado do cluster
+### Tue Jun 23 11:20:59 -03 2026
+
+===== ./validate-installation.sh =====
+[0;34m[INFO][0m Starting comprehensive validation...
+
+[0;34m[INFO][0m Validating k3d cluster...
+[0;32m[SUCCESS][0m k3d cluster validation passed
+
+[0;34m[INFO][0m Validating kubeconfig...
+[0;32m[SUCCESS][0m Kubeconfig validation passed
+
+[0;34m[INFO][0m Validating namespaces...
+[0;32m[SUCCESS][0m All expected namespaces found
+
+[0;34m[INFO][0m Validating Helm releases...
+[0;32m[SUCCESS][0m All expected Helm releases found
+
+[0;34m[INFO][0m Validating key services...
+[0;32m[SUCCESS][0m Key services validation passed
+
+[0;34m[INFO][0m Validating pod readiness...
+[0;32m[SUCCESS][0m All pods are ready
+
+[0;34m[INFO][0m Validating Kgateway ingress...
+[0;32m[SUCCESS][0m Kgateway ingress validation passed
+
+[0;32m[SUCCESS][0m All validations passed!
+[0;32m[SUCCESS][0m OpenChoreo installation validation completed successfully!
+
+===== kubectl get pods -A =====
+NAMESPACE                  NAME                                                READY   STATUS    RESTARTS   AGE
+cert-manager               cert-manager-cainjector-85c6497c8-4j7kj             1/1     Running   0          4m2s
+cert-manager               cert-manager-dc95d9f8c-gt52l                        1/1     Running   0          4m2s
+cert-manager               cert-manager-webhook-7bc66778cf-p42c4               1/1     Running   0          4m2s
+external-secrets           external-secrets-85dccb745d-8r54c                   1/1     Running   0          3m27s
+external-secrets           external-secrets-cert-controller-6d9964dd6b-6vpv5   1/1     Running   0          3m27s
+external-secrets           external-secrets-webhook-5bff9d77fb-5tqdv           1/1     Running   0          3m27s
+kube-system                coredns-64fd4b4794-l7jbr                            1/1     Running   0          4m11s
+kube-system                local-path-provisioner-774c6665dc-kc2kw             1/1     Running   0          4m11s
+kube-system                metrics-server-7bfffcd44-xbfrb                      1/1     Running   0          4m11s
+kube-system                svclb-gateway-default-4646d190-k5sbq                1/1     Running   0          118s
+kube-system                svclb-gateway-default-cb8085bd-c44nd                1/1     Running   0          43s
+openbao                    openbao-0                                           1/1     Running   0          77s
+openchoreo-control-plane   backstage-75857b6f57-9nk2w                          1/1     Running   0          2m
+openchoreo-control-plane   cluster-gateway-7d6fccdf4d-fl9px                    1/1     Running   0          2m
+openchoreo-control-plane   controller-manager-54bdf45c88-5rbvv                 1/1     Running   0          2m
+openchoreo-control-plane   event-forwarder-5f4f856c96-sr5jm                    1/1     Running   0          2m
+openchoreo-control-plane   gateway-default-568b6b9bc8-hz6m9                    1/1     Running   0          118s
+openchoreo-control-plane   kgateway-7dcf4bf945-b6jc6                           1/1     Running   0          2m43s
+openchoreo-control-plane   openchoreo-api-b5f784fdd-kfcw4                      1/1     Running   0          2m
+openchoreo-data-plane      cluster-agent-dataplane-67c798f455-vtrsq            1/1     Running   0          43s
+openchoreo-data-plane      gateway-default-5d47d97589-mvw84                    1/1     Running   0          43s
+thunder                    thunder-deployment-6b5445cb74-pb6mw                 1/1     Running   0          2m4s
